@@ -1,0 +1,21 @@
+<Window x:Class="LastMessenger.CreateGroupChatButtonPop"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:local="clr-namespace:LastMessenger"
+        mc:Ignorable="d"
+        Title="Create Group" Height="350" Width="300">
+    
+    <StackPanel Margin="20">
+        <TextBlock Text="Create Group Chat" FontSize="18" FontWeight="Bold" Margin="0,0,0,15" HorizontalAlignment="Center"/>
+        
+        <TextBlock Text="Group Key (name):"/>
+        <TextBox x:Name="GroupKeyInput" Margin="0,5,0,15"/>
+
+        <TextBlock Text="Enter Unique IDs of Members (comma-separated):"/>
+        <TextBox x:Name="UniqueIdsInput" Margin="0,5,0,15"/>
+
+        <Button Content="Create Group" Click="CreateGroup_Click" Width="120" HorizontalAlignment="Center"/>
+    </StackPanel>
+</Window>
